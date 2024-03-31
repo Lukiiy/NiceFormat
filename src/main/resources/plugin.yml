@@ -1,0 +1,4 @@
+name: NiceFormat
+version: '${project.version}'
+main: me.lukiiy.niceformat.main
+author: Lukiiy
