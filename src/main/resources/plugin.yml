@@ -2,3 +2,7 @@ name: NiceFormat
 version: '${project.version}'
 main: me.lukiiy.niceformat.main
 author: Lukiiy
+commands:
+  niceformat:
+    description: "Reloads the plugin"
+    permission: niceformat.reload
