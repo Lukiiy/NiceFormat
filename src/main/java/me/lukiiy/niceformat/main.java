@@ -5,8 +5,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class main extends JavaPlugin {
     public static main Plugin;
-    public static boolean Color = true;
-    public static String Format = "%1$s: %2$s";
 
     @Override
     public void onEnable() {
@@ -19,12 +17,13 @@ public class main extends JavaPlugin {
     @Override
     public void onDisable() {}
 
+    public String get(String path) {return getConfiguration().getString(path);}
+    public boolean getBoolean(String path) {return getConfiguration().getBoolean(path, true);}
+
     public void config() {
         getConfiguration().load();
-        Color = getConfiguration().getBoolean("color", Color);
-        Format = getConfiguration().getString("format", Format)
-                .replace("(p)", "%1$s")
-                .replace("(msg)", "%2$s");
+        getConfiguration().getBoolean("color", true);
+        getConfiguration().getString("format", "(p): (msg)");
         getConfiguration().save();
     }
 }
