@@ -1,9 +1,9 @@
 # NiceFormat
 
-> Minecraft Beta 1.7.3 (CraftBukkit) Plugin
+> Minecraft b1.7.3 CraftBukkit Plugin (it also works on later versions, like r1.0)
 ---
 
-A plugin to toggle colors (&) in the chat and format the chat to "Player: Message".
+A plugin to toggle colors (&) in the chat and also change its format.
 
 | Command      |    Description     |        Permission |
 |:-------------|:------------------:|------------------:|
